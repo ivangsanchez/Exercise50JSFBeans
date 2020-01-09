@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html 
+   xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:h = "http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core"
+   xmlns:ui = "http://java.sun.com/jsf/facelets"
+   xmlns:p="http://primefaces.org/ui"
+>
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>JSF Beans</title>
+</h:head>
+<h:body>
+
+   <h1><h:outputText value="Usando Anotaciones en la clase Mensaje"></h:outputText></h1>
+   <br></br>
+   
+   <h2><h:outputText value="Practica 1. Hola Mundo"></h:outputText></h2>
+		<h:outputText value="#{mimensajitu1.diHola()}"></h:outputText>
+		
+   <h2><h:outputText value="Practica 2. Mensaje Tuneado"></h:outputText></h2>
+   		<h:outputText value="#{mimensajitu1.mensajeTuneado('Perroasqueroso')}"></h:outputText>
+   
+   <h2><h:outputText value="Practica 3. Suma de Dos Numeros"></h:outputText></h2>
+		<h:outputText value="#{mimensajitu1.suma(5,3)}"></h:outputText>
+	
+   <h2><h:outputText value="Practica 4.JSF Bean con Getters and Setters"></h:outputText></h2>
+	<h:outputText value="#{welcomeBean.welcomeMessage}"></h:outputText>
+
+</h:body>
+</html>
